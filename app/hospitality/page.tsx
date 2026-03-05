@@ -43,16 +43,12 @@ export default function HospitalityPage() {
       </section>
 
       {/* Stats bar */}
-      <section className="bg-gray-900 border-t border-white/5">
-        <div className="max-w-[1280px] mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-px bg-white/8">
+      <section className="bg-gray-900 py-8">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (
-            <div key={s.label} className="text-center bg-gray-900 py-6 md:py-10 px-4">
-              <div className="text-3xl md:text-4xl lg:text-[44px] font-extrabold text-white tracking-[-0.03em] leading-none">
-                {s.value}
-              </div>
-              <div className="text-[11px] uppercase tracking-[0.14em] text-gray-500 mt-3 font-semibold">
-                {s.label}
-              </div>
+            <div key={s.label} className="text-center">
+              <div className="text-3xl font-bold text-white">{s.value}</div>
+              <div className="text-xs uppercase tracking-widest text-gray-400 mt-1">{s.label}</div>
             </div>
           ))}
         </div>

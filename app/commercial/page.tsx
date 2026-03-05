@@ -59,7 +59,7 @@ export default function CommercialPage() {
             { value: "30+", label: "Properties & Projects" },
             { value: "200,000+", label: "Sq Ft Commercial" },
             { value: "30+", label: "Years in BC" },
-            { value: "5+", label: "Municipalities" },
+            { value: "5+", label: "Metro Vancouver Municipalities" },
           ].map((s) => (
             <div key={s.label} className="text-center">
               <div className="text-3xl font-bold text-white">{s.value}</div>
