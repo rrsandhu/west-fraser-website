@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -34,8 +35,14 @@ export default function CareersPage() {
 
       {/* Hero */}
       <section className="relative h-[50vh] md:h-[60vh] flex items-center overflow-hidden bg-gray-900">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-slate-700" />
-        <div className="absolute inset-0 bg-black/30" />
+        <Image
+          src="/Construction/West%20Fraser%20Dev_Fletcher%20Ave%20Concrete%20Pour%2001%20April%2029%202023.jpg"
+          alt="West Fraser construction crew at work"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 pt-20 w-full">
           <p className="text-xs uppercase tracking-[0.3em] text-white/50 mb-5">
             West Fraser Developments · Careers

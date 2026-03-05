@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "West Fraser Developments | Metro Vancouver Real Estate",
+  title: "West Fraser Construction | Design-Build & General Contracting",
   description:
-    "West Fraser Developments builds exceptional residential and commercial communities across Metro Vancouver. Explore new homes, rentals, and commercial spaces.",
+    "West Fraser Construction delivers full-service design-build and general contracting for commercial, industrial, and residential projects across BC. Quality, schedule certainty, and transparency from day one.",
 };
 
 export default function RootLayout({

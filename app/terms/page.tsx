@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Terms of Use | West Fraser Developments",
-  description: "Terms of Use for the West Fraser Developments Ltd. website.",
+  description: "Terms of Use for the West Fraser Construction Ltd. website.",
 };
 
 export default function TermsPage() {
@@ -31,9 +31,9 @@ export default function TermsPage() {
             <div>
               <h2 className="text-xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
               <p>
-                By accessing or using the West Fraser Developments Ltd. website (the &ldquo;Site&rdquo;), you agree to be
+                By accessing or using the West Fraser Construction Ltd. website (the &ldquo;Site&rdquo;), you agree to be
                 bound by these Terms of Use (&ldquo;Terms&rdquo;). If you do not agree to these Terms, please do not use
-                the Site. West Fraser Developments Ltd. (&ldquo;West Fraser,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) reserves
+                the Site. West Fraser Construction Ltd. (&ldquo;West Fraser,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) reserves
                 the right to modify these Terms at any time. Your continued use of the Site following any
                 changes constitutes your acceptance of the revised Terms.
               </p>
@@ -54,7 +54,7 @@ export default function TermsPage() {
               <h2 className="text-xl font-bold text-gray-900 mb-4">3. Intellectual Property</h2>
               <p>
                 All content on this Site — including text, images, graphics, logos, and design elements —
-                is the property of West Fraser Developments Ltd. or its licensors and is protected by
+                is the property of West Fraser Construction Ltd. or its licensors and is protected by
                 applicable Canadian and international copyright and intellectual property laws. You may not
                 reproduce, distribute, or create derivative works from any content on this Site without
                 our express written permission.
@@ -86,7 +86,7 @@ export default function TermsPage() {
             <div>
               <h2 className="text-xl font-bold text-gray-900 mb-4">6. Limitation of Liability</h2>
               <p>
-                To the fullest extent permitted by applicable law, West Fraser Developments Ltd. shall
+                To the fullest extent permitted by applicable law, West Fraser Construction Ltd. shall
                 not be liable for any indirect, incidental, special, consequential, or punitive damages
                 arising from your use of, or inability to use, the Site or its content. Our total
                 liability for any claim arising from your use of the Site shall not exceed one hundred
@@ -131,11 +131,11 @@ export default function TermsPage() {
                 If you have any questions about these Terms of Use, please contact us:
               </p>
               <address className="not-italic mt-4 text-sm leading-7 border-l-2 border-gray-200 pl-4">
-                <strong className="text-gray-900">West Fraser Developments Ltd.</strong><br />
+                <strong className="text-gray-900">West Fraser Construction Ltd.</strong><br />
                 11411 131 Street<br />
                 Surrey, BC, V3R 2T9<br />
                 <a href="tel:+16045828500" className="text-gray-900 hover:underline">T: 604-582-8500</a><br />
-                <a href="mailto:info@wfdev.ca" className="text-gray-900 hover:underline">info@wfdev.ca</a>
+                <a href="mailto:info@wfconstruction.ca" className="text-gray-900 hover:underline">info@wfconstruction.ca</a>
               </address>
             </div>
 

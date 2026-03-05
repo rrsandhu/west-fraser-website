@@ -26,8 +26,8 @@ export default function ResidentialPage() {
       {/* Page Hero */}
       <section className="relative h-[45vh] md:h-[55vh] flex items-end overflow-hidden bg-gray-800">
         <Image
-          src="https://westfraserdev.ca/wp-content/uploads/2021/11/Living_dark_001.png"
-          alt="West Fraser Developments Residential"
+          src="/Construction/DJI_20240515160547_0171_D-Pano.jpg"
+          alt="West Fraser residential construction aerial"
           fill
           className="object-cover object-center"
           priority

@@ -6,10 +6,10 @@ export default function JoinSection() {
       {/* Left — real WFD about image */}
       <div className="relative min-h-[40vh] md:min-h-0">
         <Image
-          src="/homepage2.jpg"
-          alt="Join West Fraser Developments"
+          src="/Construction/West%20Fraser_Fletcher%20Ave%20Crane%2001.jpg"
+          alt="West Fraser construction crane"
           fill
-          className="object-cover"
+          className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/20" />
       </div>

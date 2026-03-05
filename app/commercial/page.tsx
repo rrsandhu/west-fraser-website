@@ -37,8 +37,8 @@ export default function CommercialPage() {
       {/* Hero */}
       <section className="relative h-[45vh] md:h-[55vh] flex items-end overflow-hidden bg-gray-800">
         <Image
-          src="/Evergreen%20Mall/photo-2.jpg"
-          alt="West Fraser Developments Commercial"
+          src="/Construction/DJI_20251007192302_0105_D.jpg"
+          alt="West Fraser commercial construction aerial"
           fill
           className="object-cover object-center"
           priority

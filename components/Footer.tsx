@@ -1,111 +1,103 @@
 import Link from "next/link";
-import Image from "next/image";
+
+const serviceLinks = [
+  { label: "Design-Build", href: "/services#design-build" },
+  { label: "General Contracting", href: "/services#general-contracting" },
+  { label: "Pre-Construction", href: "/services#pre-construction" },
+  { label: "Tenant Improvements", href: "/services#tenant-improvements" },
+  { label: "Renovations & Upgrades", href: "/services#renovations" },
+];
+
+const companyLinks = [
+  { label: "About", href: "/about" },
+  { label: "Projects", href: "/projects" },
+  { label: "Contact", href: "/contact" },
+];
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400">
+    <footer className="bg-[#1a2e44] text-gray-400">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
 
-          {/* Column 1 — Address & contact */}
-          <div className="md:col-span-2">
-            <h4 className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
-              West Fraser Developments
-            </h4>
-            <address className="not-italic text-sm leading-7">
+          {/* Column 1 — Brand + Address */}
+          <div className="lg:col-span-2">
+            {/* Logo */}
+            <div className="flex items-center gap-2.5 mb-6">
+              <svg width="26" height="26" viewBox="0 0 28 28" fill="none" className="text-[#c9973a]">
+                <rect x="4" y="15" width="20" height="4" rx="1" fill="currentColor" />
+                <path d="M7 15V11C7 7.686 10.134 5 14 5C17.866 5 21 7.686 21 11V15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                <path d="M11 15V12C11 10.343 12.343 9 14 9C15.657 9 17 10.343 17 12V15" fill="currentColor" />
+              </svg>
+              <div>
+                <div className="text-sm font-bold text-white tracking-wide leading-none font-[family-name:var(--font-manrope)]">
+                  West Fraser
+                </div>
+                <div className="text-[10px] font-semibold tracking-[0.2em] uppercase leading-none mt-0.5 text-[#c9973a]">
+                  Construction
+                </div>
+              </div>
+            </div>
+            <p className="text-sm text-gray-400 leading-relaxed mb-5 max-w-xs">
+              Full-service design-build and general contracting for commercial, industrial, and residential projects across BC.
+            </p>
+            <address className="not-italic text-sm leading-7 text-gray-400">
               11411 131 Street<br />
               Surrey, BC, V3R 2T9<br />
               <a href="tel:+16045828500" className="hover:text-white transition-colors">
                 T: 604-582-8500
               </a>
               <br />
-              <a href="fax:+16045828505" className="hover:text-white transition-colors">
-                F: 604-582-8505
-              </a>
-              <br />
-              <a href="mailto:info@wfdev.ca" className="hover:text-white transition-colors mt-1 inline-block">
-                info@wfdev.ca
+              <a href="mailto:info@wfconstruction.ca" className="hover:text-white transition-colors mt-1 inline-block">
+                info@wfconstruction.ca
               </a>
             </address>
           </div>
 
-          {/* Column 2 — Site links */}
+          {/* Column 2 — Services */}
           <div>
-            <h4 className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
-              Properties
+            <h4 className="text-white text-xs font-semibold uppercase tracking-[0.2em] mb-5">
+              Services
             </h4>
-            <ul className="space-y-2 text-sm">
-              {["Residential", "Apartment Rentals", "Commercial"].map((item) => (
-                <li key={item}>
-                  <Link
-                    href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                    className="hover:text-white transition-colors"
-                  >
-                    {item}
+            <ul className="space-y-3 text-sm">
+              {serviceLinks.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="hover:text-white transition-colors">
+                    {item.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3 — Company + Social, Logo */}
-          <div className="flex flex-col justify-between">
-            <div>
-              <h4 className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
-                Company
-              </h4>
-              <ul className="space-y-2 text-sm mb-8">
-                {["About", "Careers", "Customer Service", "Contact"].map((item) => (
-                  <li key={item}>
-                    <Link
-                      href={`/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                      className="hover:text-white transition-colors"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+          {/* Column 3 — Company */}
+          <div>
+            <h4 className="text-white text-xs font-semibold uppercase tracking-[0.2em] mb-5">
+              Company
+            </h4>
+            <ul className="space-y-3 text-sm mb-8">
+              {companyLinks.map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="hover:text-white transition-colors">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-              {/* Social icons */}
-              <div className="flex items-center gap-4">
-                {[
-                  { label: "LinkedIn", href: "https://www.linkedin.com/company/westfraserdev", path: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z M4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" },
-                  { label: "Instagram", href: "https://www.instagram.com/westfraserdev/", path: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zm1.5-4.87h.01M7.5 20.5h9a4 4 0 0 0 4-4v-9a4 4 0 0 0-4-4h-9a4 4 0 0 0-4 4v9a4 4 0 0 0 4 4z" },
-                ].map((s) => (
-                  <a
-                    key={s.label}
-                    href={s.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={s.label}
-                    className="text-gray-500 hover:text-white transition-colors"
-                  >
-                    <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                      <path d={s.path} />
-                    </svg>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            {/* Logo */}
-            <div className="mt-10 self-end">
-              <Link href="/" className="relative block h-10 w-40">
-                <Image
-                  src="/logo-white2.png"
-                  alt="West Fraser Developments"
-                  fill
-                  className="object-contain object-right"
-                />
-              </Link>
-            </div>
+            {/* CTA */}
+            <Link
+              href="/contact"
+              className="inline-block bg-[#c9973a] text-white text-xs font-semibold px-5 py-3 tracking-wider uppercase hover:bg-[#a87828] transition-colors"
+            >
+              Request a Quote
+            </Link>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between gap-3 text-xs">
-          <p>© {new Date().getFullYear()} West Fraser Developments Ltd. All rights reserved.</p>
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between gap-3 text-xs text-gray-500">
+          <p>© {new Date().getFullYear()} West Fraser Construction Ltd. All rights reserved. A division of West Fraser Developments.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>

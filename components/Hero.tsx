@@ -40,8 +40,8 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gray-900">
       <Image
-        src="/hero.jpg"
-        alt="West Fraser Developments"
+        src="/Construction/DJI_20251007192022_0092_D.jpg"
+        alt="West Fraser construction site aerial"
         fill
         className="object-cover object-center"
         priority

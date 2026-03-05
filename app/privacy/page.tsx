@@ -3,8 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | West Fraser Developments",
-  description: "Privacy Policy for West Fraser Developments Ltd.",
+  title: "Privacy Policy | West Fraser Construction",
+  description: "Privacy Policy for West Fraser Construction Ltd.",
 };
 
 export default function PrivacyPage() {
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
             <div>
               <h2 className="text-xl font-bold text-gray-900 mb-4">1. Introduction</h2>
               <p>
-                West Fraser Developments Ltd. ("West Fraser," "we," "us," or "our") is committed to protecting
+                West Fraser Construction Ltd. ("West Fraser Construction," "we," "us," or "our") is committed to protecting
                 the privacy of individuals who visit our website and interact with our services. This Privacy
                 Policy explains how we collect, use, disclose, and safeguard your personal information in
                 accordance with the <em>Personal Information Protection Act</em> (PIPA) of British Columbia
@@ -123,11 +123,11 @@ export default function PrivacyPage() {
                 information, please contact:
               </p>
               <address className="not-italic mt-4 text-sm leading-7 border-l-2 border-gray-200 pl-4">
-                <strong className="text-gray-900">West Fraser Developments Ltd.</strong><br />
+                <strong className="text-gray-900">West Fraser Construction Ltd.</strong><br />
                 11411 131 Street<br />
                 Surrey, BC, V3R 2T9<br />
                 <a href="tel:+16045828500" className="text-gray-900 hover:underline">T: 604-582-8500</a><br />
-                <a href="mailto:info@wfdev.ca" className="text-gray-900 hover:underline">info@wfdev.ca</a>
+                <a href="mailto:info@wfconstruction.ca" className="text-gray-900 hover:underline">info@wfconstruction.ca</a>
               </address>
             </div>
 
